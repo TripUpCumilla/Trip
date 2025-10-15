@@ -179,22 +179,25 @@
       </div>
 
       <h3>📋 পেমেন্ট ফর্ম</h3>
-      <form onsubmit="event.preventDefault(); alert('✅ Payment information received!');">
-        <input type="text" placeholder="নাম লিখুন" required />
-        <input type="text" placeholder="কত জন যাবেন?" required />
-        <input type="text" placeholder="মোবাইল নম্বর" required />
-        <input type="text" placeholder="Transaction ID" required />
-        <select required>
-          <option value="">ট্যুর প্যাকেজ নির্বাচন করুন</option>
-          
-          <option>2Days 3 Night solo Pack, 4,500৳</option>
-<option>2 Days 3 Night Couple Pack, 2 Person 11,999৳ </option>
-          <option>3Days 4 Night solo Pack, 5,999৳ </option>
-          <option>3Days 4 Night Couple Pack 2 Person, 13,999৳</option>
+      <div class="google-form-container">
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScqNvh98LPOQ0o0KNzTcLa6i0tQnzs5iN3f_w7QeZ-Hjdt_Zw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
 
-          
-        </select>
-        <button type="submit">Submit Payment</button>
+<style>
+.google-form-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px; /* চাইলে কমাতে বা বাড়াতে পারো */
+  margin: 0 auto; /* ফর্মটাকে পেজের মাঝে রাখে */
+  padding: 10px;
+}
+
+.google-form-container iframe {
+  width: 100%;
+  height: 1200px; /* ফর্মের দৈর্ঘ্য অনুযায়ী সামঞ্জস্য করো */
+  border: none;
+}
+</style>
       </form>
     </div>
 
