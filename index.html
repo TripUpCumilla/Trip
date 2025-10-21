@@ -24,7 +24,15 @@ This single-file project includes inline CSS and JavaScript to keep it easy to e
     To customize layout/colors, edit the :root variables and the CSS below.
   -->
   <style>
-
+/* 🌫️ Glassmorphism Effect */
+.glass {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: var(--radius);
+}
     
     :root{
       --accent:#e54b4b; /* brand accent */
@@ -131,12 +139,12 @@ header.hero {
         </div>
         <div>
           <h1>Trip Up Cumilla</h1>
-          <div class="tagline">Explore Bangladesh with friendly local guides — safe, fun, affordable domestic tours.</div>
+          <div class="tagline glass">Explore Bangladesh with friendly local guides — safe, fun, affordable domestic tours.</div>
         </div>
       </div>
 
       <!-- About paragraph: edit this to change services -->
-      <div class="about">
+      <div class="about glass">
         <strong>About Trip Up Cumilla</strong>
         <p style="margin:8px 0 0; color:var(--muted)">Trip Up Cumilla organises domestic tours across Bangladesh — family outings, student group trips, and private packages. We arrange transport, guides, food options and comfortable stays. Destinations include Cox's Bazar, Bandarban, Rangamati, Sajek, Shitakundu, Sundarban, Sylhet, Jaflong, and Sreemangal.</p>
       </div>
@@ -171,11 +179,11 @@ header.hero {
     <!-- MEMBERS -->
     <section id="members">
       <h2>Our Members</h2>
-      <p class="muted">Friendly local hosts ready to help you explore.</p>
-      <div class="cards" role="list">
+      <p class="muted glass">Friendly local hosts ready to help you explore.</p>
+      <div class="cards glass" role="list">
 
         <!-- Member card: replace avatar1.jpg etc. -->
-        <article class="card" role="listitem" aria-labelledby="m1-name">
+        <article class="card glass" role="listitem" aria-labelledby="m1-name">
           <div class="avatar"><img src="images/avatar1.jpg" alt="Amena Akter Kheya" /></div>
           <div>
             <h3 id="m1-name">Amena Akter Kheya</h3>
@@ -184,7 +192,7 @@ header.hero {
           </div>
         </article>
 
-        <article class="card" role="listitem" aria-labelledby="m2-name">
+        <article class="card glass" role="listitem" aria-labelledby="m2-name">
           <div class="avatar"><img src="images/avatar2.jpg" alt="Amena Akter Popy" /></div>
           <div>
             <h3 id="m2-name">Fahima Akter Popy</h3>
