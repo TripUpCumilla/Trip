@@ -359,6 +359,58 @@ This single-file project includes inline CSS and JavaScript to keep it easy to e
       </div>
     </section>
 
+  <!-- Google Map Section (Responsive & Fixed Layout) -->
+<section>
+  <h2>Our Location</h2>
+  <div style="
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+  ">
+    <!-- Google Map (Responsive Left Side) -->
+    <div style="
+      flex: 1 1 380px;
+      min-width: 320px;
+      max-width: 480px;
+    ">
+      <div style="
+        position: relative;
+        width: 100%;
+        padding-bottom: 65%; /* Controls aspect ratio */
+        border-radius: 12px;
+        overflow: hidden;
+      ">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.976315606209!2d91.18469667764818!3d23.46131879980858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37547f47667ee13d%3A0xf6ea6ad7897fabe0!2sTrip%20Up%20Cumilla!5e0!3m2!1sen!2sbd!4v1761044600933!5m2!1sen!2sbd13.1!3m3!1m2!1s0x37537f80b4d2b18b%3A0xf934f0b6a13e1d4!2sComilla%20Town%20Hall!5e0!3m2!1sen!2sbd!4v1697123456789!5m2!1sen!2sbd"
+          style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+          "
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- Address / Description (Right Side) -->
+    <div style="flex: 1 1 300px; min-width: 260px;">
+      <h3>Trip Up Cumilla Office</h3>
+      <p style="color: var(--muted); line-height: 1.6;">
+        Town Hall Road, Kandirpar,<br>
+        Cumilla, Bangladesh.<br>
+        📞 +880 1711-234567<br>
+        ✉️ contact@tripupcumilla.com
+      </p>
+    </div>
+  </div>
+</section>
+
     <!-- README visible on page for easy copy/paste -->
     <section id="Trip Up Cumilla">
       <h2>Trip Up Cumilla</h2>
