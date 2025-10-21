@@ -23,68 +23,7 @@ This single-file project includes inline CSS and JavaScript to keep it easy to e
     Styles are intentionally placed here so the project stays as a single index.html file.
     To customize layout/colors, edit the :root variables and the CSS below.
   -->
-  <style>bgh<!-- Put this CSS into your <style> section (replace images/bg.jpg with your image path) -->
-<style>
-  /* ensure full-height so background covers even on short pages */
-  html, body {
-    height: 100%;
-    margin: 0;
-  }
-
-  /* page background image (covers whole viewport) */
-  body {
-    /* change this path to where you store the image */
-    background-image: url('images/bgb.jpg');
-    background-size: cover;           /* cover entire area while preserving aspect ratio */
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;     /* keeps background fixed during scroll on desktop */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
-  /* dark translucent overlay so page content remains readable */
-  body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.35);     /* adjust opacity to taste (0.0 - 0.6 recommended) */
-    pointer-events: none;
-    z-index: 0;
-  }
-
-  /* make sure your main content stacks above the overlay */
-  .container {
-    position: relative;
-    z-index: 1;
-    /* keep the existing container background, padding and radius you already have */
-    /* if you want a slight glass effect, uncomment the following: */
-    /* background: rgba(255,255,255,0.92); backdrop-filter: blur(6px); */
-  }
-
-  /* optional: if you want header text darker/lighter depending on design */
-  header.hero, .about, .card, .contact-card, .pkg, footer {
-    position: relative;
-    z-index: 1;
-  }
-
-  /* mobile devices: background-attachment:fixed can be janky -> use scroll there */
-  @media (max-width: 1024px) {
-    body {
-      background-attachment: scroll;
-    }
-    body::before {
-      background: rgba(0,0,0,0.30);
-    }
-  }
-
-  /* small tweak for very small screens to keep contrast comfortable */
-  @media (max-width: 420px) {
-    body::before {
-      background: rgba(0,0,0,0.28);
-    }
-  }
-</style>
+  <style>
 
     
     :root{
