@@ -40,7 +40,20 @@ This single-file project includes inline CSS and JavaScript to keep it easy to e
     .container{max-width:var(--max-width);margin:0 auto;padding:24px}
 
     /* Header / Hero */
-    header.hero{display:grid;grid-template-columns:1fr;gap:20px;align-items:center;padding:30px 0}
+header.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  align-items: center;
+  padding: 40px 20px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  
+  /* 🌈 সুন্দর গ্রেডিয়েন্ট ব্যাকগ্রাউন্ড (ফুটারের মতো, তবে একটু হালকা) */
+  background: linear-gradient(135deg, #8ed8ff, #baf6ff);
+  color: #003d5b;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
     .brand{display:flex;align-items:center;gap:16px}
     .logo{width:68px;height:68px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#ff8a65);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
     h1{font-size:28px;margin:0}
